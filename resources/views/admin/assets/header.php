@@ -16,17 +16,17 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="/<?= FOLDER_ADMIN ?>">Home</a>
                                     </li>
-                                    <li class="nav-item dropdown">
+                                    <!-- <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="/<?= FOLDER_ADMIN ?>post">Posts</a></li>
                                             <li><hr class="dropdown-divider"></li>
                                             <li><a class="dropdown-item" href="/<?= FOLDER_ADMIN ?>category">Categor&iacute;as</a></li>
                                         </ul>
-                                    </li>
-                                    <!-- <li class="nav-item">
-                                        <a class="nav-link" href="/contact">Configuracion</a>
                                     </li> -->
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/contact">Configuración</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

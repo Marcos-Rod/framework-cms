@@ -1,6 +1,7 @@
 <?php
 
 use App\Controllers\Admin\AdminController;
+use App\Controllers\Admin\ConfigurationController;
 use App\Controllers\AuthController;
 use App\Route;
 
@@ -10,7 +11,8 @@ use App\Route;
 Route::get('admin', [AdminController::class, 'index']);
 
 if (AuthController::isLoggedIn()) {
-    /* Rutas protegidas con autenticación */
+    Route::get(FOLDER_ADMIN . 'configuration', [ConfigurationController::class, 'index']);
+    Route::post(FOLDER_ADMIN . 'configuration/store', [ConfigurationController::class, 'store']);
 }
 
 Route::get(FOLDER_ADMIN . ':slug', [AdminController::class, 'index']);
